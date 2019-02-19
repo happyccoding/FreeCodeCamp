@@ -12,3 +12,5 @@ function makeClass() {
   const Vegetable = makeClass();
   const carrot = new Vegetable('carrot');
   console.log(carrot.name); // => should be 'carrot'
+
+  

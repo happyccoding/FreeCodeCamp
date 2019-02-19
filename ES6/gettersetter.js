@@ -3,16 +3,16 @@ function makeClass() {
   /* Alter code below this line */
   class Thermostat {
     constructor(temperature) {
-        
       this._temperature = temperature;
     }
-    // getter
+
     get temperature() {
       return this._temperature;
     }
-    // setter
+
     set temperature(temperature) {
-      this._temperature = temperature;
+      this._temperature = 5/9 * (temperature - 32);
+
     }
   }
   /* Alter code above this line */
