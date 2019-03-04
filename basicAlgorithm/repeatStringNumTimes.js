@@ -1,13 +1,8 @@
 function repeatStringNumTimes(str, num) {
     // repeat after me
-    if (num <=0) return '';
-    // return str.repeat(num);
-    let strs = '';
-    while(num>0) {
-        strs += str;
-        num--;
-    }
-    return strs;
-}
-
-console.log(repeatStringNumTimes("abc", 3));
+     if (num < 0) return "";
+     if (num == 1) return str;
+    return str+=repeatStringNumTimes(str, num-1);
+  }
+  
+  console.log(repeatStringNumTimes("abc", 3));
