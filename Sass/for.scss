@@ -1,0 +1,7 @@
+<style type='text/sass'>
+  @for $i from 1 through 5 {
+    .text-#{$i} {font-size: 10px * $i}
+  }
+  
+  
+</style>
